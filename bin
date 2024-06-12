@@ -1,0 +1,62 @@
+!#/bin
+<.swf=*.splash>
+<wait>[ENTER]</wait>
+
+<platform=ios android=21>
+webhook=Host -o -sw [*]
+[{
+include: {{{xX1}}}
+include: [[.sex]]
+include: [[TL.VC]]
+include: alsamixer
+include: pulseaudio
+include: library.FTP
+include: library.UDP
+include: library.TCP
+include: library.IP4
+include: library.wen3
+###################################################
+include: clickjack
+include: inject
+include: evilpush
+include: papasmurf
+include: one.bomb.ass.phone
+include: ZajajDaiSON
+let [{
+###################################################################[[ZajajDaiSON]]#######################################################################
+[[Destroy]’R]:(https://www.*.*).^^>v:/—
++<=:||:
+[{:/bin/bash/{{{xX1}}}/python3 ZajajDaiSON.py
+[============================]
+[                                                                           ]
+[.                 ]	[.      ]	[.                 ]
+[.                 ]	[.      ]	[.                 ]
+[.                 ]	[.      ]	[.                 ]
+[.                 ]	[.      ]	[.                 ]
+[#########################]>>>
+________:||:>>>   BP.[eye.scan]   0=BON 
+USA:WET:||:DRY                   [x19].WW
++     +.        @                                       =||=
+[======|.    ^^^::^^^^^^^^         0
+[*.             |~.^]]+(0)
+[.              |.        [[   ]].    ::========::
+|_______|.         ^.v.      +COLOMBIA
+[############################]
+}]=ZajajDaiSON
+###################################################===================================================
+###################################################
+<cell=9 9 cellpadding= line=dashed>
+<html>
+<header1>StreekerVille.Linux.Terminal</header1>
+<title>'T:||:T'</title>
+<head>
+<body>
+
+<footer>T:||:T</title>
+</html>
+}]
+&&
+drop.{{{0}}}-xX1.sex
+drop.[TL.VC(.mic)+]
+let .listen="M"=call.mute
+let .listen="T(*)"=call.pulseaudio start
