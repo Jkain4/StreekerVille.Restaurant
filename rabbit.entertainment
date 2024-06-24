@@ -1,0 +1,41 @@
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+# Create a figure and axis
+fig, ax = plt.subplots()
+
+# Draw the box (purple velvet fabric)
+box = patches.Rectangle((0.2, 0.2), 0.6, 0.4, linewidth=1, edgecolor='purple', facecolor='purple', alpha=0.5)
+ax.add_patch(box)
+
+# Draw the rabbit (simplified shape)
+rabbit_body = patches.Ellipse((0.5, 0.55), 0.2, 0.1, linewidth=1, edgecolor='orange', facecolor='none')
+rabbit_ear_left = patches.Ellipse((0.45, 0.65), 0.05, 0.15, linewidth=1, edgecolor='orange', facecolor='none')
+rabbit_ear_right = patches.Ellipse((0.55, 0.65), 0.05, 0.15, linewidth=1, edgecolor='orange', facecolor='none')
+
+ax.add_patch(rabbit_body)
+ax.add_patch(rabbit_ear_left)
+ax.add_patch(rabbit_ear_right)
+
+# Draw the mirror
+mirror = patches.Rectangle((0.1, 0.6), 0.8, 0.3, linewidth=1, edgecolor='blue', facecolor='blue', alpha=0.3)
+ax.add_patch(mirror)
+
+# Draw the flowing velvet fabric
+velvet_fabric = patches.FancyBboxPatch((0.2, 0.2), 0.6, 0.7, boxstyle="round,pad=0.1", linewidth=1, edgecolor='purple', facecolor='purple', alpha=0.2)
+ax.add_patch(velvet_fabric)
+
+# Draw the motion arrows
+arrow_style = dict(facecolor="black", edgecolor="black", linewidth=1, alpha=0.8)
+ax.annotate('', xy=(0.5, 0.6), xytext=(0.5, 0.75), arrowprops=arrow_style)
+ax.annotate('', xy=(0.45, 0.6), xytext=(0.45, 0.75), arrowprops=arrow_style)
+ax.annotate('', xy=(0.55, 0.6), xytext=(0.55, 0.75), arrowprops=arrow_style)
+
+# Set the aspect of the plot to be equal
+ax.set_aspect('equal')
+
+# Remove axes for cleaner look
+ax.axis('off')
+
+# Display the plot
+plt.show()
